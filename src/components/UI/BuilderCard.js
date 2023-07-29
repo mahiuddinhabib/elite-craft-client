@@ -1,9 +1,11 @@
+import { setComponent } from "@/redux/features/components/componentSlice";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
 
 const BuilderCard = ({ product }) => {
-    const router = useRouter()
+  const router = useRouter();
+  const dispatch = useDispatch();
   const {
     _id,
     image,
@@ -15,10 +17,17 @@ const BuilderCard = ({ product }) => {
     averageRating,
   } = product;
 
-  const handleBuilderBtn = () =>{
+  const handleBuilderBtn = () => {
     console.log(productName);
-    router.push('/pc-builder')
-  }
+    if (category === "Power Supply Unit")
+        dispatch(setComponent({ category: "PowerSupplyUnit", component: product }));
+    else if (category === "Storage Device")
+        dispatch(setComponent({ category: "StorageDevice", component: product }));
+    else
+        dispatch(setComponent({ category, component: product }));
+
+    router.push("/pc-builder");
+  };
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
@@ -30,9 +39,7 @@ const BuilderCard = ({ product }) => {
         />
       </figure>
       <div className="card-body py-4">
-        <h2 className="card-title">
-          {productName}
-        </h2>
+        <h2 className="card-title">{productName}</h2>
         <div>
           <p>Category: {category}</p>
           <p>Price: ${price}</p>

@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  processor: {productName:'Bell'},
-  motherboard: {},
-  ram: {},
-  powerSupplyUnit: {},
-  storageDevice: {},
-  monitor: {},
+  Processor: {},
+  Motherboard: {},
+  RAM: {},
+  PowerSupplyUnit: {},
+  StorageDevice: {},
+  Monitor: {},
 };
 
 const componentSlice = createSlice({
@@ -14,10 +14,16 @@ const componentSlice = createSlice({
   initialState,
   reducers: {
     setComponent: (state, action) => {
-
+      const { category, component } = action.payload;
+      state[category] = component;
     },
     resetComponents: (state) => {
-        
+        state.Processor = {};
+        state.Motherboard = {};
+        state.RAM = {};
+        state.PowerSupplyUnit = {};
+        state.StorageDevice = {};
+        state.Monitor = {};
     },
   },
 });

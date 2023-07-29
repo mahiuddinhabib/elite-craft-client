@@ -26,48 +26,48 @@ const PcBuilder = () => {
         <tbody>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">Processor</td>
-            {Object.keys(component?.processor).length !== 0 ? (
-              <TableData product={component.processor} />
+            {Object.keys(component?.Processor).length !== 0 ? (
+              <TableData product={component.Processor} />
             ) : (
-              <td><Link href={'/pc-builderer/Processor'} className="btn btn-primary">Select</Link></td>
+              <td><Link href={'/pc-builder/Processor'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">Motherboard</td>
-            {Object.keys(component?.motherboard).length !== 0 ? (
-              <TableData product={component.motherboard} />
+            {Object.keys(component?.Motherboard).length !== 0 ? (
+              <TableData product={component.Motherboard} />
             ) : (
               <td><Link href={'/pc-builder/Motherboard'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">RAM</td>
-            {Object.keys(component?.ram).length !== 0 ? (
-              <TableData product={component.ram} />
+            {Object.keys(component?.RAM).length !== 0 ? (
+              <TableData product={component.RAM} />
             ) : (
               <td><Link href={'/pc-builder/RAM'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">Power Supply Unit</td>
-            {Object.keys(component?.powerSupplyUnit).length !== 0 ? (
-              <TableData product={component.powerSupplyUnit} />
+            {Object.keys(component?.PowerSupplyUnit).length !== 0 ? (
+              <TableData product={component.PowerSupplyUnit} />
             ) : (
               <td><Link href={'/pc-builder/Power Supply Unit'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">Storage Device</td>
-            {Object.keys(component?.storageDevice).length !== 0 ? (
-              <TableData product={component.storageDevice} />
+            {Object.keys(component?.StorageDevice).length !== 0 ? (
+              <TableData product={component.StorageDevice} />
             ) : (
               <td><Link href={'/pc-builder/Storage Device'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
             <td className="text-[17px] text-gray-500 font-bold">Monitor</td>
-            {Object.keys(component?.monitor).length !== 0 ? (
-              <TableData product={component.monitor} />
+            {Object.keys(component?.Monitor).length !== 0 ? (
+              <TableData product={component.Monitor} />
             ) : (
               <td><Link href={'/pc-builder/Monitor'} className="btn btn-primary">Select</Link></td>
             )}

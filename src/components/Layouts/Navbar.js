@@ -1,7 +1,9 @@
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
+  const { data: session } = useSession();
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -108,7 +110,20 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        {session ? (
+          <button className="btn" onClick={() => signOut()}>Sign out</button>
+        ) : (
+          <button
+          className="btn"
+            onClick={() =>
+              signIn("google", {
+                callbackUrl: "http://localhost:3000/",
+              })
+            }
+          >
+            Sign in
+          </button>
+        )}
       </div>
     </div>
   );

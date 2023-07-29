@@ -18,7 +18,7 @@ const BuilderCard = ({ product }) => {
   } = product;
 
   const handleBuilderBtn = () => {
-    console.log(productName);
+    // console.log(productName);
     if (category === "Power Supply Unit")
         dispatch(setComponent({ category: "PowerSupplyUnit", component: product }));
     else if (category === "Storage Device")

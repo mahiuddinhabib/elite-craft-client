@@ -17,17 +17,12 @@ const componentSlice = createSlice({
       const { category, component } = action.payload;
       state[category] = component;
     },
-    resetComponents: (state) => {
-        state.Processor = {};
-        state.Motherboard = {};
-        state.RAM = {};
-        state.PowerSupplyUnit = {};
-        state.StorageDevice = {};
-        state.Monitor = {};
+    resetComponent: (state, action) => {
+      state[action.payload.category]={};
     },
   },
 });
 
-export const { setComponent, resetComponents } = componentSlice.actions;
+export const { setComponent, resetComponent } = componentSlice.actions;
 
 export default componentSlice.reducer;

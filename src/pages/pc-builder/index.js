@@ -5,17 +5,9 @@ import { useSelector } from "react-redux";
 
 const PcBuilder = () => {
   const component = useSelector((state) => state.component);
-    const categories = [
-      "Processor",
-      "Motherboard",
-      "RAM",
-      "Power Supply Unit",
-      "Storage Device",
-      "Monitor",
-    ];
   return (
-    <div className="min-h-screen overflow-x-auto md:mx-72">
-      <table className="table mt-8">
+    <div className="min-h-screen md:mx-72">
+      <table className="table overflow-auto mt-8">
         {/* head */}
         <thead>
           <tr>

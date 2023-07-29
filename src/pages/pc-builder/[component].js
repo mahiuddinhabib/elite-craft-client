@@ -4,7 +4,7 @@ import React from "react";
 
 const Component = ({ products }) => {
   const router = useRouter();
-  console.log(products);
+//   console.log(products);
   return (
     <div>
       <h1 className="text-center mt-8 text-3xl font-bold">

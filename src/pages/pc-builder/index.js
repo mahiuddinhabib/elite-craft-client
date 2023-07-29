@@ -1,9 +1,18 @@
 import TableData from "@/components/UI/TableData";
 import Image from "next/image";
+import Link from "next/link";
 import { useSelector } from "react-redux";
 
 const PcBuilder = () => {
   const component = useSelector((state) => state.component);
+    const categories = [
+      "Processor",
+      "Motherboard",
+      "RAM",
+      "Power Supply Unit",
+      "Storage Device",
+      "Monitor",
+    ];
   return (
     <div className="min-h-screen overflow-x-auto md:mx-72">
       <table className="table mt-8">
@@ -20,7 +29,7 @@ const PcBuilder = () => {
             {Object.keys(component?.processor).length !== 0 ? (
               <TableData product={component.processor} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builderer/Processor'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
@@ -28,7 +37,7 @@ const PcBuilder = () => {
             {Object.keys(component?.motherboard).length !== 0 ? (
               <TableData product={component.motherboard} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builder/Motherboard'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
@@ -36,7 +45,7 @@ const PcBuilder = () => {
             {Object.keys(component?.ram).length !== 0 ? (
               <TableData product={component.ram} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builder/RAM'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
@@ -44,7 +53,7 @@ const PcBuilder = () => {
             {Object.keys(component?.powerSupplyUnit).length !== 0 ? (
               <TableData product={component.powerSupplyUnit} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builder/Power Supply Unit'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
@@ -52,7 +61,7 @@ const PcBuilder = () => {
             {Object.keys(component?.storageDevice).length !== 0 ? (
               <TableData product={component.storageDevice} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builder/Storage Device'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
           <tr>
@@ -60,7 +69,7 @@ const PcBuilder = () => {
             {Object.keys(component?.monitor).length !== 0 ? (
               <TableData product={component.monitor} />
             ) : (
-              <td><button className="btn btn-primary">Select</button></td>
+              <td><Link href={'/pc-builder/Monitor'} className="btn btn-primary">Select</Link></td>
             )}
           </tr>
         </tbody>

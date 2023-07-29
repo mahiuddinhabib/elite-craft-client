@@ -4,7 +4,7 @@ import Link from "next/link";
 const CategoryCard = ({category}) => {
     console.log(category);
     return (
-      <Link href={'/'} className="card bg-base-100 shadow-xl image-full">
+      <Link href={`/categories/${category}`} className="card bg-base-100 shadow-xl image-full">
         <figure>
           <Image
             src="/images/ssd.png"

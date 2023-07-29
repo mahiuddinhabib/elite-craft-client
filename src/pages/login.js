@@ -3,27 +3,34 @@ import React from "react";
 
 const Login = () => {
   const { data: session } = useSession();
-  if (session) {
     return (
-      <>
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
+      <div className="min-h-screen flex justify-center items-center">
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card-body">
+            {session ? (
+              <>
+                <button className="btn" onClick={() => signOut()}>
+                  Sign out
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  className="btn"
+                  onClick={() =>
+                    signIn("google", {
+                      callbackUrl: "http://localhost:3000/",
+                    })
+                  }
+                >
+                  Sign in with Google
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
     );
-  }
-  return (
-    <>
-      Not signed in <br />
-      <button
-        onClick={() =>
-          signIn("google", {
-            callbackUrl: "http://localhost:3000/",
-          })
-        }
-      >
-        Sign in
-      </button>
-    </>
-  );
 };
 
 export default Login;

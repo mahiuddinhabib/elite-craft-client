@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  processor: "",
-  motherboard: "",
-  RAM: "",
-  powerSupplyUnit: "",
-  storageDevice: "",
-  monitor: "",
+  processor: {productName:'Bell'},
+  motherboard: {},
+  ram: {},
+  powerSupplyUnit: {},
+  storageDevice: {},
+  monitor: {},
 };
 
 const componentSlice = createSlice({

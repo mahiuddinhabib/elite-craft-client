@@ -5,8 +5,6 @@ const store = configureStore({
   reducer: {
     component: componentReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(api.middleware),
 });
 
 export default store;

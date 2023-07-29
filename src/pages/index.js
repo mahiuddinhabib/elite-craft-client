@@ -1,10 +1,12 @@
+import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import FeaturedProducts from "@/components/UI/FeaturedProducts";
 
 export default function Home({data}) {
   const featuredProducts = data?.data;
   return (
-    <main className="min-h-screen md:flex justify-center">
+    <main className="min-h-screen">
       <FeaturedProducts products={featuredProducts} />
+      <FeaturedCategory/>
     </main>
   );
 }

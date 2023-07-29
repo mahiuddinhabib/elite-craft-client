@@ -4,7 +4,7 @@ import Link from "next/link";
 const ProductCard = ({product}) => {
     const {_id, image, productName, category, price, description, status, averageRating} = product;
     return (
-      <div className="card mx-2 md:w-80 bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <Image
             src="/images/ssd.png"

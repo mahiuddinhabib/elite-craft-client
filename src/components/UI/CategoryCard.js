@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CategoryCard = ({category}) => {
-    console.log(category);
+    // console.log(category);
     return (
       <Link href={`/categories/${category}`} className="card bg-base-100 shadow-xl image-full">
         <figure>

@@ -33,31 +33,37 @@ const Navbar = () => {
               <a>Categories</a>
               <ul className="p-2">
                 <li>
-                  <Link href={"/"}>CPU / Processor</Link>
+                  <Link href={"/categories/Processor"}>Processor</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Motherboard</Link>
+                  <Link href={"/categories/Motherboard"}>Motherboard</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>RAM</Link>
+                  <Link href={"/categories/RAM"}>RAM</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Power Supply Unit</Link>
+                  <Link href={"/categories/Power Supply Unit"}>
+                    Power Supply Unit
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Storage Device</Link>
+                  <Link href={"/categories/Storage Device"}>
+                    Storage Device
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Monitor</Link>
+                  <Link href={"/categories/Monitor"}>Monitor</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Others</Link>
+                  <Link href={"/categories/Others"}>Others</Link>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
-        <Link href={'/'} className="btn btn-ghost normal-case text-xl">ElitCraft</Link>
+        <Link href={"/"} className="btn btn-ghost normal-case text-xl">
+          ElitCraft
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -69,25 +75,29 @@ const Navbar = () => {
               <summary>Categories</summary>
               <ul>
                 <li>
-                  <Link href={"/"}>CPU / Processor</Link>
+                  <Link href={"/categories/Processor"}>Processor</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Motherboard</Link>
+                  <Link href={"/categories/Motherboard"}>Motherboard</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>RAM</Link>
+                  <Link href={"/categories/RAM"}>RAM</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Power Supply Unit</Link>
+                  <Link href={"/categories/Power Supply Unit"}>
+                    Power Supply Unit
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Storage Device</Link>
+                  <Link href={"/categories/Storage Device"}>
+                    Storage Device
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Monitor</Link>
+                  <Link href={"/categories/Monitor"}>Monitor</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>Others</Link>
+                  <Link href={"/categories/Others"}>Others</Link>
                 </li>
               </ul>
             </details>

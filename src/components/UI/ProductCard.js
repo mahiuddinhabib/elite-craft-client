@@ -26,7 +26,7 @@ const ProductCard = ({product}) => {
             <p>Rating: {averageRating}</p>
           </div>
           <div className="card-actions justify-end">
-            <Link href={`/${_id}`} className="btn btn-outline">See more</Link>
+            <Link href={`/products/${_id}`} className="btn btn-outline">See more</Link>
           </div>
         </div>
       </div>

@@ -6,15 +6,15 @@
         "status": "in stock",
         "price": 329.99,
         "description": "The Intel Core i7-10700K is a high-performance processor for gaming and multitasking.",
-        "keyFeatures": {
-            "Brand": "Intel",
-            "Model": "Core i7-10700K",
-            "Specification": "8 cores, 16 threads",
-            "Socket": "LGA1200",
-            "Clock Speed": "3.8 GHz (base) up to 5.1 GHz (boost)",
-            "TDP": "125W"
-        },
-        "individualFRating": 4.8,
+        "keyFeatures": [
+            {"Brand": "Intel"},
+            {"Model": "Core i7-10700K"},
+            {"Specification": "8 cores, 16 threads"},
+            {"Socket": "LGA1200"},
+            {"Clock Speed": "3.8 GHz (base) up to 5.1 GHz (boost)"},
+            {"TDP": "125W"}
+        ],
+        "individualRating": 4.8,
         "averageRating": 4.7,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -25,15 +25,15 @@
         "status": "in stock",
         "price": 449.99,
         "description": "The AMD Ryzen 9 5900X offers incredible performance for enthusiasts and content creators.",
-        "keyFeatures": {
-            "Brand": "AMD",
-            "Model": "Ryzen 9 5900X",
-            "Specification": "12 cores, 24 threads",
-            "Socket": "AM4",
-            "Clock Speed": "3.7 GHz (base) up to 4.8 GHz (boost)",
-            "TDP": "105W"
-        },
-        "individualFRating": 4.9,
+        "keyFeatures": [
+            {"Brand": "AMD"},
+            {"Model": "Ryzen 9 5900X"},
+            {"Specification": "12 cores, 24 threads"},
+            {"Socket": "AM4"},
+            {"Clock Speed": "3.7 GHz (base) up to 4.8 GHz (boost)"},
+            {"TDP": "105W"}
+        ],
+        "individualRating": 4.9,
         "averageRating": 4.9,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -44,15 +44,15 @@
         "status": "in stock",
         "price": 269.99,
         "description": "The Intel Core i5-11600K is a great choice for gamers on a budget.",
-        "keyFeatures": {
-            "Brand": "Intel",
-            "Model": "Core i5-11600K",
-            "Specification": "6 cores, 12 threads",
-            "Socket": "LGA1200",
-            "Clock Speed": "3.9 GHz (base) up to 4.9 GHz (boost)",
-            "TDP": "125W"
-        },
-        "individualFRating": 4.5,
+        "keyFeatures": [
+            {"Brand": "Intel"},
+            {"Model": "Core i5-11600K"},
+            {"Specification": "6 cores, 12 threads"},
+            {"Socket": "LGA1200"},
+            {"Clock Speed": "3.9 GHz (base) up to 4.9 GHz (boost)"},
+            {"TDP": "125W"}
+        ],
+        "individualRating": 4.5,
         "averageRating": 4.6,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -63,16 +63,16 @@
         "status": "in stock",
         "price": 349.99,
         "description": "The ASUS ROG Strix Z590-E Gaming is a high-end motherboard for gaming enthusiasts.",
-        "keyFeatures": {
-            "Brand": "ASUS",
-            "Model": "ROG Strix Z590-E Gaming",
-            "Socket": "LGA1200",
-            "Form Factor": "ATX",
-            "Memory Slots": "4 x DDR4 DIMM, max 128GB",
-            "Expansion Slots": "2 x PCIe 4.0 x16, 3 x PCIe 3.0 x1",
-            "Storage": "3 x M.2 slots, 6 x SATA 6Gb/s ports"
-        },
-        "individualFRating": 4.7,
+        "keyFeatures": [
+            {"Brand": "ASUS"},
+            {"Model": "ROG Strix Z590-E Gaming"},
+            {"Socket": "LGA1200"},
+            {"Form Factor": "ATX"},
+            {"Memory Slots": "4 x DDR4 DIMM, max 128GB"},
+            {"Expansion Slots": "2 x PCIe 4.0 x16, 3 x P}CIe 3.0 x1"},
+            {"Storage": "3 x M.2 slots, 6 x SATA 6Gb/s ports"}
+        ],
+        "individualRating": 4.7,
         "averageRating": 4.8,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -83,16 +83,16 @@
         "status": "in stock",
         "price": 169.99,
         "description": "The GIGABYTE B550 AORUS Elite is a feature-packed motherboard with excellent value.",
-        "keyFeatures": {
-            "Brand": "GIGABYTE",
-            "Model": "B550 AORUS Elite",
-            "Socket": "AM4",
-            "Form Factor": "ATX",
-            "Memory Slots": "4 x DDR4 DIMM, max 128GB",
-            "Expansion Slots": "1 x PCIe 4.0 x16, 1 x PCIe 3.0 x16, 2 x PCIe 3.0 x1",
-            "Storage": "2 x M.2 slots, 6 x SATA 6Gb/s ports"
-        },
-        "individualFRating": 4.6,
+        "keyFeatures": [
+            {"Brand": "GIGABYTE"},
+            {"Model": "B550 AORUS Elite"},
+            {"Socket": "AM4"},
+            {"Form Factor": "ATX"},
+            {"Memory Slots": "4 x DDR4 DIMM, max 128GB"},
+            {"Expansion Slots": "1 x PCIe 4.0 x16, 1 x P}CIe 3.0 x16, 2 x PCIe 3.0 x1"},
+            {"Storage": "2 x M.2 slots, 6 x SATA 6Gb/s ports"}
+        ],
+        "individualRating": 4.6,
         "averageRating": 4.5,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -103,16 +103,16 @@
         "status": "in stock",
         "price": 209.99,
         "description": "The MSI MPG Z490 Gaming Edge WiFi is a reliable and stylish motherboard for gamers.",
-        "keyFeatures": {
-            "Brand": "MSI",
-            "Model": "MPG Z490 Gaming Edge WiFi",
-            "Socket": "LGA1200",
-            "Form Factor": "ATX",
-            "Memory Slots": "4 x DDR4 DIMM, max 128GB",
-            "Expansion Slots": "2 x PCIe 3.0 x16, 3 x PCIe 3.0 x1",
-            "Storage": "2 x M.2 slots, 6 x SATA 6Gb/s ports"
-        },
-        "individualFRating": 4.4,
+        "keyFeatures": [
+            {"Brand": "MSI"},
+            {"Model": "MPG Z490 Gaming Edge WiFi"},
+            {"Socket": "LGA1200"},
+            {"Form Factor": "ATX"},
+            {"Memory Slots": "4 x DDR4 DIMM, max 128GB"},
+            {"Expansion Slots": "2 x PCIe 3.0 x16, 3 x P}CIe 3.0 x1"},
+            {"Storage": "2 x M.2 slots, 6 x SATA 6Gb/s ports"}
+        ],
+        "individualRating": 4.4,
         "averageRating": 4.3,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -123,18 +123,18 @@
         "status": "in stock",
         "price": 119.99,
         "description": "The Corsair Vengeance RGB Pro offers stylish looks and high-performance memory.",
-        "keyFeatures": {
-            "Brand": "Corsair",
-            "Model": "Vengeance RGB Pro",
-            "Capacity": "16GB (2 x 8GB)",
-            "Type": "DDR4",
-            "Speed": "3200MHz",
-            "CAS Latency": "16",
-            "Voltage": "1.35V",
-            "RGB Lighting": "Yes",
-            "Heat Spreader": "Aluminum"
-        },
-        "individualFRating": 4.9,
+        "keyFeatures": [
+            {"Brand": "Corsair"},
+            {"Model": "Vengeance RGB Pro"},
+            {"Capacity": "16GB (2 x 8GB)"},
+            {"Type": "DDR4"},
+            {"Speed": "3200MHz"},
+            {"CAS Latency": "16"},
+            {"Voltage": "1.35V"},
+            {"RGB Lighting": "Yes"},
+            {"Heat Spreader": "Aluminum"}
+        ],
+        "individualRating": 4.9,
         "averageRating": 4.8,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -145,18 +145,18 @@
         "status": "in stock",
         "price": 219.99,
         "description": "The G.Skill Ripjaws V Series delivers high-speed memory for demanding tasks.",
-        "keyFeatures": {
-            "Brand": "G.Skill",
-            "Model": "Ripjaws V Series",
-            "Capacity": "32GB (2 x 16GB)",
-            "Type": "DDR4",
-            "Speed": "3600MHz",
-            "CAS Latency": "18",
-            "Voltage": "1.35V",
-            "RGB Lighting": "No",
-            "Heat Spreader": "Aluminum"
-        },
-        "individualFRating": 4.7,
+        "keyFeatures": [
+            {"Brand": "G.Skill"},
+            {"Model": "Ripjaws V Series"},
+            {"Capacity": "32GB (2 x 16GB)"},
+            {"Type": "DDR4"},
+            {"Speed": "3600MHz"},
+            {"CAS Latency": "18"},
+            {"Voltage": "1.35V"},
+            {"RGB Lighting": "No"},
+            {"Heat Spreader": "Aluminum"}
+        ],
+        "individualRating": 4.7,
         "averageRating": 4.6,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -167,18 +167,18 @@
         "status": "in stock",
         "price": 69.99,
         "description": "The Crucial Ballistix offers budget-friendly DDR4 memory with decent performance.",
-        "keyFeatures": {
-            "Brand": "Crucial",
-            "Model": "Ballistix",
-            "Capacity": "8GB",
-            "Type": "DDR4",
-            "Speed": "3000MHz",
-            "CAS Latency": "16",
-            "Voltage": "1.35V",
-            "RGB Lighting": "No",
-            "Heat Spreader": "Yes"
-        },
-        "individualFRating": 4.3,
+        "keyFeatures": [
+            {"Brand": "Crucial"},
+            {"Model": "Ballistix"},
+            {"Capacity": "8GB"},
+            {"Type": "DDR4"},
+            {"Speed": "3000MHz"},
+            {"CAS Latency": "16"},
+            {"Voltage": "1.35V"},
+            {"RGB Lighting": "No"},
+            {"Heat Spreader": "Yes"}
+        ],
+        "individualRating": 4.3,
         "averageRating": 4.2,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -189,15 +189,15 @@
         "status": "in stock",
         "price": 129.99,
         "description": "The Corsair RM750x is a high-quality modular power supply with 80+ Gold efficiency.",
-        "keyFeatures": {
-            "Brand": "Corsair",
-            "Model": "RM750x",
-            "Wattage": "750W",
-            "Efficiency": "80+ Gold",
-            "Modular": "Yes",
-            "Connectors": "Fully modular, including PCIe and SATA"
-        },
-        "individualFRating": 4.8,
+        "keyFeatures": [
+            {"Brand": "Corsair"},
+            {"Model": "RM750x"},
+            {"Wattage": "750W"},
+            {"Efficiency": "80+ Gold"},
+            {"Modular": "Yes"},
+            {"Connectors": "Fu}lly modular, including PCIe and SATA"}
+        ],
+        "individualRating": 4.8,
         "averageRating": 4.9,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -208,15 +208,15 @@
         "status": "in stock",
         "price": 109.99,
         "description": "The EVGA Supernova 650 G5 is a reliable and efficient power supply for gaming PCs.",
-        "keyFeatures": {
-            "Brand": "EVGA",
-            "Model": "Supernova 650 G5",
-            "Wattage": "650W",
-            "Efficiency": "80+ Gold",
-            "Modular": "Fully Modular",
-            "Connectors": "PCIe, SATA, Molex"
-        },
-        "individualFRating": 4.7,
+        "keyFeatures": [
+            {"Brand": "EVGA"},
+            {"Model": "Supernova 650 G5"},
+            {"Wattage": "650W"},
+            {"Efficiency": "80+ Gold"},
+            {"Modular": "Fully Modular"},
+            {"Connectors": "PCIe, SATA, Molex"}
+        ],
+        "individualRating": 4.7,
         "averageRating": 4.7,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -227,15 +227,15 @@
         "status": "in stock",
         "price": 69.99,
         "description": "The Seasonic S12III offers a cost-effective power supply solution for budget builds.",
-        "keyFeatures": {
-            "Brand": "Seasonic",
-            "Model": "S12III",
-            "Wattage": "550W",
-            "Efficiency": "80+ Bronze",
-            "Modular": "No",
-            "Connectors": "PCIe, SATA, Molex"
-        },
-        "individualFRating": 4.5,
+        "keyFeatures": [
+            {"Brand": "Seasonic"},
+            {"Model": "S12III"},
+            {"Wattage": "550W"},
+            {"Efficiency": "80+ Bronze"},
+            {"Modular": "No"},
+            {"Connectors": "P}CIe, SATA, Molex"}
+        ],
+        "individualRating": 4.5,
         "averageRating": 4.4,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -246,15 +246,15 @@
         "status": "in stock",
         "price": 189.99,
         "description": "The Samsung 970 EVO Plus is a high-speed NVMe SSD for fast storage performance.",
-        "keyFeatures": {
-            "Brand": "Samsung",
-            "Model": "970 EVO Plus",
-            "Capacity": "1TB",
-            "Interface": "NVMe PCIe 3.0 x4",
-            "Read Speed": "up to 3,500 MB/s",
-            "Write Speed": "up to 3,300 MB/s"
-        },
-        "individualFRating": 4.9,
+        "keyFeatures": [
+            {"Brand": "Samsung"},
+            {"Model": "970 EVO Plus"},
+            {"Capacity": "1TB"},
+            {"Interface": "NVMe PCIe 3.0 x4"},
+            {"Read Speed": "up to 3,500 MB/s"},
+            {"Write Speed": "up to 3,300 MB/s"}
+        ],
+        "individualRating": 4.9,
         "averageRating": 4.9,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -265,15 +265,15 @@
         "status": "in stock",
         "price": 259.99,
         "description": "The Western Digital Blue offers ample storage capacity with SATA III interface.",
-        "keyFeatures": {
-            "Brand": "Western Digital",
-            "Model": "Blue",
-            "Capacity": "2TB",
-            "Interface": "SATA III",
-            "Read Speed": "up to 560 MB/s",
-            "Write Speed": "up to 530 MB/s"
-        },
-        "individualFRating": 4.8,
+        "keyFeatures": [
+            {"Brand": "Western Digital"},
+            {"Model": "Blue"},
+            {"Capacity": "2TB"},
+            {"Interface": "SATA III"},
+            {"Read Speed": "up to 560 MB/s"},
+            {"Write Speed": "up to 530 MB/s"}
+        ],
+        "individualRating": 4.8,
         "averageRating": 4.8,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -284,15 +284,15 @@
         "status": "in stock",
         "price": 129.99,
         "description": "The Seagate BarraCuda is a reliable HDD with a large storage capacity for mass storage needs.",
-        "keyFeatures": {
-            "Brand": "Seagate",
-            "Model": "BarraCuda",
-            "Capacity": "4TB",
-            "Interface": "SATA III",
-            "Speed": "7200 RPM",
-            "Cache": "256MB"
-        },
-        "individualFRating": 4.6,
+        "keyFeatures": [
+            {"Brand": "Seagate"},
+            {"Model": "BarraCuda"},
+            {"Capacity": "4TB"},
+            {"Interface": "SATA III"},
+            {"Speed": "7200 RPM"},
+            {"Cache": "256MB"}
+        ],
+        "individualRating": 4.6,
         "averageRating": 4.7,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -303,17 +303,17 @@
         "status": "in stock",
         "price": 449.99,
         "description": "The LG 27GL850-B is a high-quality QHD gaming monitor with fast refresh rates.",
-        "keyFeatures": {
-            "Brand": "LG",
-            "Model": "27GL850-B",
-            "Screen Size": "27 inches",
-            "Resolution": "2560x1440 (QHD)",
-            "Refresh Rate": "144Hz",
-            "Response Time": "1ms",
-            "Panel Type": "Nano IPS",
-            "HDR Support": "HDR10"
-        },
-        "individualFRating": 4.9,
+        "keyFeatures": [
+            {"Brand": "LG"},
+            {"Model": "27GL850-B"},
+            {"Screen Size": "27 inches"},
+            {"Resolution": "2560x1440 (QHD)"},
+            {"Refresh Rate": "144Hz"},
+            {"Response Time": "1ms"},
+            {"Panel Type": "Nano IPS"},
+            {"HDR Support": "HDR10"}
+        ],
+        "individualRating": 4.9,
         "averageRating": 4.9,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -324,17 +324,17 @@
         "status": "in stock",
         "price": 599.99,
         "description": "The ASUS ROG Swift PG279Q is a premium gaming monitor with G-Sync and WQHD resolution.",
-        "keyFeatures": {
-            "Brand": "ASUS",
-            "Model": "ROG Swift PG279Q",
-            "Screen Size": "27 inches",
-            "Resolution": "2560x1440 (WQHD)",
-            "Refresh Rate": "165Hz",
-            "Response Time": "4ms",
-            "Panel Type": "IPS",
-            "HDR Support": "HDR10"
-        },
-        "individualFRating": 4.8,
+        "keyFeatures": [
+            {"Brand": "ASUS"},
+            {"Model": "ROG Swift PG279Q"},
+            {"Screen Size": "27 inches"},
+            {"Resolution": "2560x1440 (WQHD)"},
+            {"Refresh Rate": "165Hz"},
+            {"Response Time": "4ms"},
+            {"Panel Type": "IPS"},
+            {"HDR Support": "HDR10"}
+        ],
+        "individualRating": 4.8,
         "averageRating": 4.7,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -345,17 +345,17 @@
         "status": "in stock",
         "price": 199.99,
         "description": "The AOC C24G1 is an affordable curved gaming monitor with Full HD resolution.",
-        "keyFeatures": {
-            "Brand": "AOC",
-            "Model": "C24G1",
-            "Screen Size": "24 inches",
-            "Resolution": "1920x1080 (Full HD)",
-            "Refresh Rate": "144Hz",
-            "Response Time": "1ms",
-            "Panel Type": "VA",
-            "HDR Support": "No"
-        },
-        "individualFRating": 4.5,
+        "keyFeatures": [
+            {"Brand": "AOC"},
+            {"Model": "C24G1"},
+            {"Screen Size": "24 inches"},
+            {"Resolution": "1920x1080 (Full HD)"},
+            {"Refresh Rate": "144Hz"},
+            {"Response Time": "1ms"},
+            {"Panel Type": "VA"},
+            {"HDR Support": "No"}
+        ],
+        "individualRating": 4.5,
         "averageRating": 4.6,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -366,16 +366,16 @@
         "status": "in stock",
         "price": 129.99,
         "description": "The Logitech G Pro is a reliable mechanical gaming keyboard with customizable lighting.",
-        "keyFeatures": {
-            "Brand": "Logitech",
-            "Model": "G Pro",
-            "Switch Type": "Mechanical",
-            "Backlit": "Yes",
-            "Lighting": "RGB",
-            "Anti-Ghosting": "Yes",
-            "Connectivity": "Wired USB"
-        },
-        "individualFRating": 4.7,
+        "keyFeatures": [
+            {"Brand": "Logitech"},
+            {"Model": "G Pro"},
+            {"Switch Type": "Mechanical"},
+            {"Backlit": "Yes"},
+            {"Lighting": "RGB"},
+            {"Anti-Ghosting": "Yes"},
+            {"Connectivity": "Wired USB"}
+        ],
+        "individualRating": 4.7,
         "averageRating": 4.8,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -386,16 +386,16 @@
         "status": "in stock",
         "price": 69.99,
         "description": "The Razer DeathAdder V2 is a popular gaming mouse with a high-precision sensor.",
-        "keyFeatures": {
-            "Brand": "Razer",
-            "Model": "DeathAdder V2",
-            "Sensor Type": "Optical",
-            "DPI Range": "up to 20,000 DPI",
-            "Buttons": "8 programmable buttons",
-            "Lighting": "RGB",
-            "Connectivity": "Wired USB"
-        },
-        "individualFRating": 4.8,
+        "keyFeatures": [
+            {"Brand": "Razer"},
+            {"Model": "DeathAdder V2"},
+            {"Sensor Type": "Optical"},
+            {"DPI Range": "up to 20,000 DPI"},
+            {"Buttons": "8 programmable buttons"},
+            {"Lighting": "RGB"},
+            {"Connectivity": "Wired USB"}
+        ],
+        "individualRating": 4.8,
         "averageRating": 4.7,
         "reviews": ["This is awesome", "Great Product"]
     },
@@ -406,16 +406,16 @@
         "status": "in stock",
         "price": 119.99,
         "description": "The Blue Yeti is a versatile USB microphone suitable for streaming, podcasting, and more.",
-        "keyFeatures": {
-            "Brand": "Blue",
-            "Model": "Yeti",
-            "Microphone Type": "Condenser",
-            "Polar Patterns": "Cardioid, Bidirectional, Omnidirectional, Stereo",
-            "Headphone Output": "Yes",
-            "Mute Button": "Yes",
-            "Connectivity": "Wired USB"
-        },
-        "individualFRating": 4.6,
+        "keyFeatures": [
+            {"Brand": "Blue"},
+            {"Model": "Yeti"},
+            {"Microphone Type": "Condenser"},
+            {"Polar Patterns": "Cardioid, Bidirectional, Omnidirectional, Stereo"},
+            {"Headphone Output": "Yes"},
+            {"Mute Button": "Yes"},
+            {"Connectivity": "Wired USB"}
+        ],
+        "individualRating": 4.6,
         "averageRating": 4.5,
         "reviews": ["This is awesome", "Great Product"]
     }

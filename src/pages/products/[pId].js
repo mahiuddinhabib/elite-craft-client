@@ -16,10 +16,9 @@ const Category = ({ product }) => {
     reviews,
     status,
     averageRating,
-    individualRating
+    individualRating,
   } = product.data;
 
-  
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
@@ -38,22 +37,21 @@ const Category = ({ product }) => {
           <p>Price: {price}</p>
           <p>AverageRating: {averageRating}</p>
           <p>IndividualRating: {individualRating}</p>
-          
-            {keyFeatures?.map((feature, featureIndex) => {
-              // The key in the list is important to uniquely identify each item
-              const [key, value] = Object.entries(feature)[1];
-              console.log(feature);
-              return (
-                <li key={featureIndex}>
-                  <strong className="text-gray-600">{key}:</strong> {value}
-                </li>
-              );
-            })}
-            <h2 className="text-xl mt-4">Reviews</h2>
-          
-          {
-            reviews.map((review, index)=><p key={index}>{review}</p>)
-          }
+
+          {keyFeatures?.map((feature, featureIndex) => {
+            const [key, value] = Object.entries(feature)[1];
+            // console.log(feature);
+            return (
+              <li key={featureIndex}>
+                <strong className="text-gray-600">{key}:</strong> {value}
+              </li>
+            );
+          })}
+          <h2 className="text-xl mt-4">Reviews</h2>
+
+          {reviews.map((review, index) => (
+            <p key={index}>{review}</p>
+          ))}
         </div>
       </div>
     </div>
@@ -64,11 +62,11 @@ export default Category;
 
 export const getStaticPaths = async () => {
   const res = await fetch("http://localhost:5000/api/v1/products");
-    const products = await res.json();
+  const products = await res.json();
 
-    const paths = products?.data?.map((p) => ({
-      params: { pId: p._id },
-    }));
+  const paths = products?.data?.map((p) => ({
+    params: { pId: p._id },
+  }));
 
   return { paths, fallback: false };
 };

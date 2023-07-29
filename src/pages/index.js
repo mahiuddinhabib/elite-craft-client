@@ -1,10 +1,12 @@
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import FeaturedProducts from "@/components/UI/FeaturedProducts";
+import HeroSection from "@/components/UI/HeroSection";
 
 export default function Home({data}) {
   const featuredProducts = data?.data;
   return (
     <main className="min-h-screen">
+      <HeroSection/>
       <FeaturedProducts products={featuredProducts} />
       <FeaturedCategory/>
     </main>

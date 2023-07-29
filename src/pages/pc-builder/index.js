@@ -15,7 +15,9 @@ const PcBuilder = () => {
 // console.log(noOfEmptySelect);
   return (
     <div className="min-h-screen md:mx-72 my-8">
-      <h1 className="text-center text-4xl">Select & Craft Your Dream Machine</h1>
+      <h1 className="text-center text-4xl">
+        Select & Craft Your Dream Machine
+      </h1>
       <table className="table overflow-auto mt-10">
         {/* head */}
         <thead>
@@ -116,7 +118,7 @@ const PcBuilder = () => {
         </tbody>
       </table>
       <div className="flex justify-center">
-        <button
+        {/* <button
           onClick={() => {
             router.push("/");
           }}
@@ -124,8 +126,36 @@ const PcBuilder = () => {
           className={`btn btn-primary`}
         >
           Complete Build
+        </button> */}
+        <button
+          className="btn btn-primary"
+          disabled={noOfEmptySelect > 1}
+          onClick={() => window.my_modal_1.showModal()}
+        >
+          Complete Build
         </button>
       </div>
+      {/* Open the modal using ID.showModal() method */}
+
+      <dialog id="my_modal_1" className="modal">
+        <form method="dialog" className="modal-box">
+          <h3 className="font-bold text-lg">Congratulations..!!</h3>
+          <p className="py-4">
+            We are teleporting your PC straight to your home!!<br/> Just thank me later...
+          </p>
+          <div className="modal-action">
+            {/* if there is a button in form, it will close the modal */}
+            <button
+              onClick={() => {
+                router.push("/");
+              }}
+              className="btn"
+            >
+              Thanks
+            </button>
+          </div>
+        </form>
+      </dialog>
     </div>
   );
 };

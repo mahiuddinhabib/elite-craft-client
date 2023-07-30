@@ -75,7 +75,9 @@ const Category = ({ product }) => {
 export default Category;
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch(
+    "https://elite-craft-backend.vercel.app/api/v1/products"
+  );
   const products = await res.json();
 
   const paths = products?.data?.map((p) => ({
@@ -87,7 +89,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/${params.pId}`
+    `https://elite-craft-backend.vercel.app/api/v1/products/${params.pId}`
   );
   const product = await res.json();
   return { props: { product } };

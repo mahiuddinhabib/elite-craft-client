@@ -3,10 +3,12 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const Category = ({ products }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div>
-      <h1 className="text-center mt-8 text-4xl font-bold">{router.query.category}</h1>
+      <h1 className="text-center mt-8 text-4xl font-bold">
+        {router.query.category}
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-2 md:mx-48 py-12">
         {products?.data?.map((p) => (
           <ProductCard key={p._id} product={p} />
@@ -38,7 +40,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/?category=${params.category}`
+    `https://elite-craft-backend.vercel.app/api/v1/products/?category=${params.category}`
   );
   const products = await res.json();
   return { props: { products } };

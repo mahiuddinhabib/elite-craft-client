@@ -4,7 +4,7 @@ import React from "react";
 
 const Component = ({ products }) => {
   const router = useRouter();
-//   console.log(products);
+  //   console.log(products);
   return (
     <div>
       <h1 className="text-center mt-8 text-3xl font-bold">
@@ -24,7 +24,7 @@ export default Component;
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/?category=${params.component}`
+    `https://elite-craft-backend.vercel.app/api/v1/products/?category=${params.component}`
   );
   const products = await res.json();
   return { props: { products } };

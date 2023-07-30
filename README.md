@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EliteCraft
 
-## Getting Started
+EliteCraft is a Next.js web app that lets users build custom PCs by selecting components. It features user authentication, protected routes, and responsiveness for an optimal experience.
 
-First, run the development server:
+## Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+[EliteCraft](https://www.facebook.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The EliteCraft website is a web application built using Next.js, allowing users to browse and select PC components to build their own custom PCs. The website features a clean and straightforward interface with various sections like the PC Builder tool, product listings, and category filtering. Users can browse featured products, view product details, and add components to the PC Builder tool for customization.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. **Navbar:**
+   - A "PC Builder" button that redirects users to the PC Builder page to start building their PC.
+   - A "Categories" dropdown with options for CPU, Motherboard, RAM, Power Supply Unit, Storage Device, Monitor, and Others.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Home Page:**
+   - Displays random PC components as Featured Products with essential details like image, name, category, price, stock status, and rating.
+   - Clicking on a Featured Product takes the user to the product detail page.
 
-## Learn More
+3. **Featured Category Sections:**
+   - Each featured category has a clickable button and it redirects users to a page displaying at least products of that specific category.
+   - Product cards on this page show basic info like image, name, category and etc.
+   - Clicking on the button takes the user to the product detail page.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Product Detail Page:**
+   - Displays detailed information about each PC component, including image, name, category, stock status, price, description, key features, individual rating, average rating, and user reviews.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **PC Builder Page:**
+   - Category sections for CPU, Motherboard, RAM, Power Supply Unit, Storage Device, and Monitor.
+   - Each category has a "Select" button.
+   - Clicking on the button takes the user to a page displaying components of that specific category.
+   - Each component card has an "Add to Builder" button to update the PC Builder tool with the selected component.
+   - The PC Builder page has a "Complete Build" button that becomes active only when at least 5 components are added to the PC Builder.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. **Responsiveness:**
+   - The entire application is responsive, providing an enjoyable user experience across both mobile and desktop devices.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+7. **Other Features:**
+   - The PC Builder page is a protected/private route, accessible only to logged-in users.
+   - User authentication is enabled using NextAuth with social login options (Google/Github).
+   - Clicking on the "Complete Build" button shows a success alert.
+   - The Home page features a hero/banner section and a footer.

@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
     "Power Supply Unit",
     "Storage Device",
     "Monitor",
-    "others",
+    "Others",
   ];
 
   const paths = categories.map((category) => ({

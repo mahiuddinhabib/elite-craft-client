@@ -20,11 +20,12 @@ const BuilderCard = ({ product }) => {
   const handleBuilderBtn = () => {
     // console.log(productName);
     if (category === "Power Supply Unit")
-        dispatch(setComponent({ category: "PowerSupplyUnit", component: product }));
+      dispatch(
+        setComponent({ category: "PowerSupplyUnit", component: product })
+      );
     else if (category === "Storage Device")
-        dispatch(setComponent({ category: "StorageDevice", component: product }));
-    else
-        dispatch(setComponent({ category, component: product }));
+      dispatch(setComponent({ category: "StorageDevice", component: product }));
+    else dispatch(setComponent({ category, component: product }));
 
     router.push("/pc-builder");
   };
@@ -32,7 +33,7 @@ const BuilderCard = ({ product }) => {
     <div className="card bg-base-100 shadow-xl">
       <figure>
         <Image
-          src="/images/ssd.png"
+          src="/images/dummy_pc.png"
           width={500}
           height={500}
           alt="Picture of the product"

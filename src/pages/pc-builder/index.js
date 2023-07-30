@@ -35,7 +35,7 @@ const PcBuilder = () => {
               <td>
                 <Link
                   href={"/pc-builder/Processor"}
-                  className="btn btn-primary"
+                  className="btn btn-sm btn-outline"
                 >
                   Select
                 </Link>
@@ -50,7 +50,7 @@ const PcBuilder = () => {
               <td>
                 <Link
                   href={"/pc-builder/Motherboard"}
-                  className="btn btn-primary"
+                  className="btn btn-sm btn-outline"
                 >
                   Select
                 </Link>
@@ -63,7 +63,10 @@ const PcBuilder = () => {
               <TableData product={component.RAM} />
             ) : (
               <td>
-                <Link href={"/pc-builder/RAM"} className="btn btn-primary">
+                <Link
+                  href={"/pc-builder/RAM"}
+                  className="btn btn-sm btn-outline"
+                >
                   Select
                 </Link>
               </td>
@@ -79,7 +82,7 @@ const PcBuilder = () => {
               <td>
                 <Link
                   href={"/pc-builder/Power Supply Unit"}
-                  className="btn btn-primary"
+                  className="btn btn-sm btn-outline"
                 >
                   Select
                 </Link>
@@ -96,7 +99,7 @@ const PcBuilder = () => {
               <td>
                 <Link
                   href={"/pc-builder/Storage Device"}
-                  className="btn btn-primary"
+                  className="btn btn-sm btn-outline"
                 >
                   Select
                 </Link>
@@ -109,7 +112,10 @@ const PcBuilder = () => {
               <TableData product={component.Monitor} />
             ) : (
               <td>
-                <Link href={"/pc-builder/Monitor"} className="btn btn-primary">
+                <Link
+                  href={"/pc-builder/Monitor"}
+                  className="btn btn-sm btn-outline"
+                >
                   Select
                 </Link>
               </td>
@@ -118,17 +124,8 @@ const PcBuilder = () => {
         </tbody>
       </table>
       <div className="flex justify-center">
-        {/* <button
-          onClick={() => {
-            router.push("/");
-          }}
-          disabled={noOfEmptySelect > 1}
-          className={`btn btn-primary`}
-        >
-          Complete Build
-        </button> */}
         <button
-          className="btn btn-primary"
+          className="btn btn-neutral"
           disabled={noOfEmptySelect > 1}
           onClick={() => window.my_modal_1.showModal()}
         >
@@ -141,10 +138,10 @@ const PcBuilder = () => {
         <form method="dialog" className="modal-box">
           <h3 className="font-bold text-lg">Congratulations..!!</h3>
           <p className="py-4">
-            We are teleporting your PC straight to your home!!<br/> Just thank me later...
+            We are teleporting your PC straight to your home!!
+            <br /> Just thank me later...
           </p>
           <div className="modal-action">
-            {/* if there is a button in form, it will close the modal */}
             <button
               onClick={() => {
                 router.push("/");

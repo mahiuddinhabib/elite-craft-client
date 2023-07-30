@@ -23,11 +23,11 @@ const Category = ({ product }) => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
         <Image
-          src="/images/ssd.png"
+          src="/images/dummy_pc.png"
           width={500}
           height={500}
           alt="Picture of the product"
-          className="max-w-sm rounded-lg shadow-2xl"
+          className="md:max-w-sm rounded-lg shadow-2xl md:mr-12"
         />
         <div>
           <h1 className="text-5xl font-bold">{productName}</h1>
@@ -38,6 +38,7 @@ const Category = ({ product }) => {
           <p>AverageRating: {averageRating}</p>
           <p>IndividualRating: {individualRating}</p>
 
+          <h2 className="text-xl mt-4">Key Features</h2>
           {keyFeatures?.map((feature, featureIndex) => {
             const [key, value] = Object.entries(feature)[1];
             // console.log(feature);
@@ -50,7 +51,20 @@ const Category = ({ product }) => {
           <h2 className="text-xl mt-4">Reviews</h2>
 
           {reviews.map((review, index) => (
-            <p key={index}>{review}</p>
+            <ul className="list-inside" key={index}>
+              <li className="mt-4">
+                <Image
+                  src={
+                    "https://www.freeiconspng.com/thumbs/profile-icon-png/user-icon-png-person-user-profile-icon-20.png"
+                  }
+                  width={25}
+                  height={25}
+                  alt="profile img"
+                  className="inline mr-2"
+                />{" "}
+                {review}
+              </li>
+            </ul>
           ))}
         </div>
       </div>

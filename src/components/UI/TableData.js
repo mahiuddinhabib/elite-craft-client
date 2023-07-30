@@ -38,7 +38,7 @@ const TableData = ({ product }) => {
         <div className="avatar">
           <div className="mask mask-squircle w-12 h-12">
             <Image
-              src="/images/ssd.png"
+              src="/images/dummy_pc.png"
               width={100}
               height={100}
               alt="Picture of the product"

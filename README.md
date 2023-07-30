@@ -2,9 +2,7 @@
 
 EliteCraft is a Next.js web app that lets users build custom PCs by selecting components. It features user authentication, protected routes, and responsiveness for an optimal experience.
 
-## Live Site
-
-[EliteCraft](https://www.facebook.com)
+## Live Site: [EliteCraft](https://www.facebook.com)
 
 ## Description
 

@@ -108,13 +108,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {session ? (
-          <button className="btn" onClick={() => signOut()}>Sign out</button>
+          <button className="btn" onClick={() => signOut()}>
+            Sign out
+          </button>
         ) : (
           <button
-          className="btn"
+            className="btn"
             onClick={() =>
               signIn("google", {
-                callbackUrl: "http://localhost:3000/",
+                callbackUrl: "https://elite-craft-client.vercel.app/",
               })
             }
           >
